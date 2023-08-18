@@ -1,0 +1,84 @@
+Trees are one of the data structure that is commonly used:
+	Non-linear data structure that contain a root and child nodes:
+	Binary Trees can have values of any type, but at most to children for each parent:
+	Binary Search Trees are more specific version of Binary Trees:
+		Every node to the left of a parent node is always less than the parent:
+		Every node to the rigth of a parent node is always greater than the parent:
+	We can search through Trees using Breadth-first and Depth-first search:
+
+Terminlogy:
+	Root:
+		The top node in the tree
+	Child:
+		A node directly connected to another node when moving away from root
+	Parent:
+		The converse notion of a child
+	Siblings:
+		A group of nodes with a same parent
+	Leaf:
+		A node with no children
+	Edge:
+		The connection between one node and another.
+
+Some tree applications:
+	HTML DOM:
+	Network Routing:
+	Abstract Syntax Trees:
+	(AI) Decision Tree:
+	Folders in Operating Systems:
+	Computer File Systems:
+	JSON:
+
+Trees can vary. There are MANY kind of trees.
+
+Binary Search Trees (BST):
+	Every parant node has at most two children:
+	Every node to the left of a parent node is always less than the parent:
+	Every node to the rigth of a parent node is always greater than the parent:
+
+
+
+TRAVERSING A TREE (BST):
+	Breadth-first search:
+		Iterative:
+			Create a queue (can be an array) and a variable to store the values of nodes visited
+			Place the root node in the queue
+			Loop as long as there is anything in the queue
+				Dequeue and push the value of the node into the visited variable
+				If there is a left property on the node dequeued - add it to the queue
+				if there is right property on the node dequeued - ad it to the queue
+			Return the variable that stores the values
+	Depth-first search:
+		(PreOrder) Recursive:
+			Create a variable to store the values of nodes visited
+			Write a helper function which accepts a node
+				Push the value of the node to the variable that stores the values
+				If the node has a left property, call the helper func with the left prop on the node
+				If the node has a right propery, call the helper func with the left prop on the node
+			Return the variable that stores the values
+		(PostOrder) Recursive:
+			Create a variable to store the values of nodes visited
+			Write a helper function which accepts a node
+				If the node has a left property, call the helper func with the left prop on the node
+				If the node has a right property, call the helper func with the right prop on the node
+				Push the value of the node to the variable that stores values
+			Return the variable that stores the values
+		(InOrder) Recursive:
+			Create a variable to store the values of nodes visited
+			Write a helper function which accepts a node
+				If the node has a left property, call the helper func with the left prop on the node
+				Push the value of the node to the variable that stores the values
+				If the node has a right property, call the helper func with the right prop on the node
+			Return the variable that stores the values 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
